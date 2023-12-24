@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 60rem;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-card {
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.product-img {
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-details {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.4rem 3.2rem 2.4rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 1.6rem;
+}
+
+.heading-primary {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.6rem;
+}
+
+.product-text {
+    font-size: 1.4rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+    margin-bottom: 2.2rem;
+}
+
+.product-price {
+    height: 3rem;
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.discount-price {
+    font-size: 2.4rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.product-price :last-child {
+    font-size: 1.2rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.product-btn svg {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.product-btn {
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    padding-block: 1.6rem;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s;
+}
+
+.product-btn:hover,
+.product-btn:active {
+    cursor: pointer;
+    background-color: hsl(158, 72%, 18%);
+}
+
+@media (max-width: 590px) {
+    html {
+        font-size: 53.25%;
+    }
+    .product-img {
+        height: 30rem;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
