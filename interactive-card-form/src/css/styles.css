@@ -117,6 +117,7 @@ body {
 }
 
 .cvc-code {
+    align-self: center;
     position: absolute;
     z-index: 10;
     display: block;
@@ -139,7 +140,8 @@ body {
 }
 
 input {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    font-weight: 600;
     color: var(--clr-very-dark-violet);
     outline: none;
     width: 100%;
@@ -151,7 +153,8 @@ input {
 }
 
 input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.85rem;
+    font-weight: normal;
     color: var(--input-placeholder);
 }
 
@@ -160,14 +163,13 @@ input.invalid {
 }
 
 input:focus,
-input:active,
-input:not(:placeholder-shown) {
+input:active {
     border: 1px solid var(--clr-very-dark-violet);
 }
 
 label {
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 1.6;
@@ -187,9 +189,13 @@ label {
 }
 
 .card-details {
-    display: grid;
-    grid-template-columns: 45fr 55fr;
+    display: flex;
+    align-items: flex-start;
     column-gap: 2.4rem;
+}
+
+.card-details > * {
+    flex-basis: 100%;
 }
 
 .card-details-input {
@@ -204,7 +210,7 @@ label {
 }
 
 .err-msg {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--input-red);
     margin-top: 0.5rem;
 }
@@ -279,7 +285,7 @@ label {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.6rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .footer-link:link,

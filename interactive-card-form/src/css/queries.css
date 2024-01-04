@@ -35,7 +35,7 @@
         display: flex;
         align-items: flex-start;
         margin-top: 12rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     .card-front-container {
         transform: translateY(31%);
@@ -131,8 +131,20 @@
 }
 
 @media (max-width: 400px) {
+    .form {
+        gap: 2rem;
+    }
     .card-front-container,
     .card-back-container {
         max-width: 30rem;
+    }
+    .card-details {
+        flex-wrap: wrap;
+    }
+    .card-details > * {
+        flex-basis: 65%;
+    }
+    .card-cvc {
+        margin-top: 2rem;
     }
 }
