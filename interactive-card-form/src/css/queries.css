@@ -1,0 +1,138 @@
+@media (max-width: 1500px) {
+    html {
+        font-size: 62.5%;
+    }
+    .card-img {
+        max-width: 40rem;
+    }
+    .bg-card-number {
+        font-size: 2.4rem;
+    }
+    .white-circle {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    .card-front-container {
+        transform: translateX(20%);
+    }
+    .card-back-container {
+        transform: translateX(35%);
+    }
+}
+
+@media (max-width: 1250px) {
+    html {
+        font-size: 58.25%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+    .bg-img-container {
+        flex-direction: row;
+    }
+    .form-container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 12rem;
+        margin-bottom: 2rem;
+    }
+    .card-front-container {
+        transform: translateY(31%);
+    }
+    .card-back-container {
+        transform: translate(calc(-10% + 3rem), 18%);
+    }
+}
+
+@media (max-width: 820px) {
+    .grid {
+        align-items: normal;
+    }
+    .bg-img-container {
+        display: block;
+        height: 40rem;
+    }
+    .card-back-container,
+    .card-front-container {
+        transform: none;
+        position: relative;
+        max-width: 35rem;
+    }
+    .card-front-container {
+        z-index: 15;
+        left: 50%;
+        bottom: -100%;
+        transform: translate(-55%, -11rem);
+    }
+    .card-back-container {
+        top: -50%;
+        left: 50%;
+        transform: translate(-45%, 19rem);
+    }
+    .shapes-container {
+        left: 2.2rem;
+    }
+    .bg-card-details-container {
+        gap: 1.2rem;
+        padding-inline: 2.2rem;
+    }
+    .bg-card-number {
+        font-size: 2.2rem;
+    }
+    .bg-card-username {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 620px) {
+    html {
+        font-size: 53.5%;
+    }
+    .grid {
+        grid-template-rows: max-content;
+    }
+    .bg-img-container {
+        height: fit-content;
+    }
+    .card-back-container,
+    .card-front-container {
+        transform: none;
+        inset: 0;
+        margin-inline: auto;
+    }
+    .card-front-container {
+        transform: translate(-5%, 124%);
+    }
+    .card-back-container {
+        transform: translate(5%, -33%);
+    }
+    .bg-card-details-container {
+        gap: 1.2rem;
+        padding-inline: 2.2rem;
+    }
+    .bg-card-number {
+        font-size: 1.6rem;
+    }
+    .bg-card-username {
+        font-size: 1.3rem;
+    }
+    .form-container {
+        padding-top: 4rem;
+        margin-inline: 3.2rem;
+        margin-top: 3rem;
+        height: fit-content;
+    }
+    .card-cvc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-front-container,
+    .card-back-container {
+        max-width: 30rem;
+    }
+}
