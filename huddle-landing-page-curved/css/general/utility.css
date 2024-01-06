@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.grid__1-col {
+    grid-template-columns: 1fr;
+}
+
+.grid__2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.link:link,
+.link:visited {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.link:hover,
+.link:active,
+.btn:hover,
+.btn:active {
+    cursor: pointer;
+}
+
+.btn {
+    font-weight: var(--fw-medium);
+    color: var(--clr-white);
+    background-color: var(--clr-pink);
+}
+
+.btn__hero:hover,
+.btn__hero:active,
+.btn__cta:hover,
+.btn__cta:active,
+.btn__footer:hover,
+.btn__footer:active {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 82, 192, 0.9);
+}
+
+img {
+    display: block;
+}
+
+.heading {
+    font-family: "Poppins", sans-serif;
+}

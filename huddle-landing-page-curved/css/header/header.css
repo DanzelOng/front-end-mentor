@@ -1,0 +1,32 @@
+.header {
+    max-width: 120rem;
+    padding: 4.4rem 3.2rem 9.6rem 3.2rem;
+    margin-inline: auto;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__btn {
+    font-size: 1.8rem;
+    display: inline-block;
+    color: var(--clr-light-pink);
+    padding: 0.5rem 2.4rem 0.5rem 2.4rem;
+    border: 1px solid var(--clr-pink);
+    border-radius: 2rem;
+    transition: all 0.2s;
+}
+
+.header__btn:hover,
+.header__btn:active {
+    color: rgba(255, 82, 192, 0.75);
+    box-shadow: 0 0 5px 2px rgba(255, 82, 191, 0.15);
+}

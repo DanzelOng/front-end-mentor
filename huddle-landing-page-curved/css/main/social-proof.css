@@ -1,0 +1,27 @@
+.section-social-proof {
+    max-width: 110rem;
+    padding-bottom: 16rem;
+    margin-inline: auto;
+    display: flex;
+}
+
+.social-proof {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+.social-proof__img img {
+    width: 3.5rem;
+    height: auto;
+}
+
+.heading__social-proof {
+    font-size: 5.8rem;
+}
+
+.social-proof__text {
+    font-size: 1.5rem;
+    color: #777777;
+    align-self: center;
+}
