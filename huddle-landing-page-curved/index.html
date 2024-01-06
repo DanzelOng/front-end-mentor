@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/general/global.css" />
+        <link rel="stylesheet" href="css/general/utility.css" />
+        <link rel="stylesheet" href="css/header/header.css" />
+        <link rel="stylesheet" href="css/main/hero.css" />
+        <link rel="stylesheet" href="css/main/social-proof.css" />
+        <link rel="stylesheet" href="css/main/features.css" />
+        <link rel="stylesheet" href="css/main/cta.css" />
+        <link rel="stylesheet" href="css/footer/footer.css" />
+        <link rel="stylesheet" href="css/media-query/queries.css" />
+        <title>
+            Frontend Mentor | Huddle landing page with curved sections
+        </title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__navigation">
+                <ul>
+                    <li>
+                        <a class="header__logo" href="#">
+                            <img src="./images/logo.svg" alt="Huddle Logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__btn link" href="#">Try it Free</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section-hero">
+                <div class="hero grid grid__1-col">
+                    <div class="hero__content">
+                        <h1 class="heading heading__primary">
+                            Build The Community Your Fans Will Love
+                        </h1>
+                        <p class="hero__text">
+                            Huddle re-imagines the way we build communities. You
+                            have a voice, but so does your audience. Create
+                            connections with your users as you engage in genuine
+                            discussion.
+                        </p>
+                        <button class="btn btn__hero">
+                            Get Started For Free
+                        </button>
+                    </div>
+                    <div class="hero__img">
+                        <img
+                            src="./images/screen-mockups.svg"
+                            alt="screen mockups"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="section-social-proof">
+                <div class="social-proof">
+                    <span class="social-proof__img">
+                        <img
+                            src="./images/icon-communities.svg"
+                            alt="communities icon"
+                        />
+                    </span>
+                    <span class="heading heading__social-proof">1.4k+</span>
+                    <span class="social-proof__text">Communities Formed</span>
+                </div>
+                <div class="social-proof">
+                    <span class="social-proof__img">
+                        <img
+                            src="./images/icon-messages.svg"
+                            alt="messages icon"
+                        />
+                    </span>
+                    <span class="heading heading__social-proof">2.7m+</span>
+                    <span class="social-proof__text">Messages Sent</span>
+                </div>
+            </section>
+            <section class="section-features">
+                <div class="feature__bg-img">
+                    <div class="feature grid grid__2-cols">
+                        <div class="feature__content">
+                            <h2 class="heading heading__feature">
+                                Grow Together
+                            </h2>
+                            <p class="feature__text">
+                                Generate meaningful discussions with your
+                                audience and build a strong, loyal community.
+                                Think of the insightful conversations you miss
+                                out on with a feedback form.
+                            </p>
+                        </div>
+                        <div class="feature__img">
+                            <img
+                                src="./images/illustration-grow-together.svg"
+                                alt="illustration of feature 1"
+                            />
+                        </div>
+                    </div>
+                    <picture>
+                        <source
+                            srcset="/images/bg-section-top-mobile-1.svg"
+                            media="(max-width: 760px)"
+                        />
+                        <img
+                            class="curved-top-svg"
+                            src="/images/bg-section-top-desktop-1.svg"
+                            alt="feature 1 curved section top"
+                        />
+                        <source />
+                    </picture>
+                    <picture>
+                        <source
+                            srcset="/images/bg-section-bottom-mobile-1.svg"
+                            media="(max-width: 760px)"
+                        />
+                        <img
+                            class="curved-bottom-svg"
+                            src="/images/bg-section-bottom-desktop-1.svg"
+                            alt="feature 1 curved section bottom"
+                        />
+                    </picture>
+                </div>
+                <div class="feature__bg-img">
+                    <div class="feature grid grid__2-cols">
+                        <div class="feature__img">
+                            <img
+                                src="./images//illustration-flowing-conversation.svg"
+                                alt="illustration of feature 2"
+                            />
+                        </div>
+                        <div class="feature__content">
+                            <h2 class="heading heading__feature">
+                                Flowing Conversations
+                            </h2>
+                            <p class="feature__text">
+                                You wouldn't paginate a conversation in real
+                                life, so why do it online? Our threads have
+                                just-in-time loading for a more natural flow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__bg-img">
+                    <div class="feature grid grid__2-cols">
+                        <div class="feature__content">
+                            <h2 class="heading heading__feature">Your Users</h2>
+                            <p class="feature__text">
+                                It takes no time at all to integrate Huddle with
+                                your app's authentication solution. This means,
+                                once signed in to your app, your users can start
+                                chatting immediately.
+                            </p>
+                        </div>
+                        <div class="feature__img">
+                            <img
+                                src="./images/illustration-your-users.svg"
+                                alt="illustration of feature 3"
+                            />
+                        </div>
+                    </div>
+                    <picture>
+                        <source
+                            srcset="/images/bg-section-top-mobile-2.svg"
+                            media="(max-width: 760px)"
+                        />
+                        <img
+                            class="curved-top-svg"
+                            src="/images/bg-section-top-desktop-2.svg"
+                            alt="feature 3 curved section top"
+                        />
+                    </picture>
+                    <picture>
+                        <source
+                            srcset="/images/bg-section-bottom-mobile-2.svg"
+                            media="(max-width: 760px)"
+                        />
+                        <img
+                            class="curved-bottom-svg"
+                            src="/images/bg-section-bottom-desktop-2.svg"
+                            alt="feature 3 curved section bottom"
+                        />
+                    </picture>
+                </div>
+            </section>
+            <section class="section-cta">
+                <h2 class="heading heading__cta">
+                    Ready To Build Your Community?
+                </h2>
+                <button class="btn btn__cta">Get Started For Free</button>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer-container grid grid__2-cols">
+                <nav class="footer__navigation">
+                    <a class="footer__logo" href="#">
+                        <img src="./images/logo-white.svg" alt="#" />
+                    </a>
+                    <p class="footer__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nulla quam, hendrerit lacinia vestibulum a,
+                        ultrices quis sem.
+                    </p>
+                    <address class="footer__contact">
+                        <div class="footer__telephone">
+                            <img
+                                src="./images/icon-phone.svg"
+                                alt="telephone icon"
+                            />
+                            <a class="footer__link" href="tel:+15431234567"
+                                >Phone: +1-543-123-4567</a
+                            >
+                        </div>
+                        <div class="footer__email">
+                            <img
+                                src="./images/icon-email.svg"
+                                alt="email icon"
+                            />
+                            <a href="mailto:example@huddle.com"
+                                >example@huddle.com</a
+                            >
+                        </div>
+                    </address>
+                </nav>
+                <div class="newsletter-container">
+                    <span class="heading heading__newsletter">
+                        Newsletter
+                    </span>
+                    <p class="newsletter__content">
+                        To recieve tips on how to grow your community, sign up
+                        to our weekly newsletter. We’ll never send you spam or
+                        pass on your email address
+                    </p>
+                    <form class="form">
+                        <input type="email" placeholder="john@gmail.com" />
+                        <button class="btn btn__footer" type="button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+                <nav class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxl-facebook-square bx-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxl-instagram bx-lg"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bx bxl-twitter bx-lg"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <picture>
+                <source
+                    srcset="/images/bg-footer-top-mobile.svg"
+                    media="(max-width: 760px)"
+                />
+                <img
+                    class="curved-top-footer-svg"
+                    src="/images/bg-footer-top-desktop.svg"
+                    alt="curved top footer"
+                />
+            </picture>
+        </footer>
+    </body>
+</html>
