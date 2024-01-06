@@ -19,3 +19,9 @@ Challenges found on [Front End Mentor](https://www.frontendmentor.io/)
 -   [Repo](https://github.com/DanzelOng/front-end-mentor/tree/master/interactive-card-form)
 -   [Link to Challenge](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
 -   [Live Site URL](https://danzelcodes-form.netlify.app)
+
+## Responsive Huddle Landing Page
+
+-   [Repo](https://github.com/DanzelOng/front-end-mentor/tree/master/huddle-landing-page-curved)
+-   [Link to Challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2)
+-   [Live Site URL](https://danzelcodes-huddle-landing.netlify.app)
