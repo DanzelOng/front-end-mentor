@@ -162,7 +162,7 @@
     }
     .header__btn {
         font-size: 1.6rem;
-        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
         text-align: center;
     }
     .feature__img img {
@@ -184,7 +184,8 @@
         padding-block: 1.6rem;
     }
     .form input {
-        padding: 1.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        font-size: 1.9rem;
     }
     .footer__content {
         line-height: 1.8;
