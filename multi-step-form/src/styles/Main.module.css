@@ -1,0 +1,10 @@
+.main {
+    width: 95rem;
+    padding: 1.8rem 0 1.8rem 1.8rem;
+    margin-inline: 3.2rem;
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    gap: 8rem;
+    background-color: var(--neutral-clr-white);
+    border-radius: 1.5rem;
+}

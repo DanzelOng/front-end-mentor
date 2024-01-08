@@ -1,0 +1,43 @@
+.btnContainer {
+    margin-top: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.btnContainer:has(.btnPrevious) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btnPrevious {
+    border: none;
+    background: none;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--neutral-clr-cool-gray);
+    justify-self: start;
+    transition: all 0.25s;
+}
+
+.btnPrevious:hover,
+.btnPrevious:active {
+    cursor: pointer;
+    color: hsla(0, 0%, 16%, 0.768);
+}
+
+.btnNext {
+    border: none;
+    font-size: 1.7rem;
+    color: var(--neutral-clr-white);
+    background-color: var(--primary-clr-marine-blue);
+    padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+    border-radius: 0.625rem;
+    justify-self: end;
+    transition: all 0.25s;
+}
+
+.btnNext:hover,
+.btnNext:active {
+    cursor: pointer;
+    background-color: hsla(213, 96%, 18%, 0.925);
+}
