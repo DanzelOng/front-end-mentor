@@ -1,0 +1,61 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    position: relative;
+}
+
+.sidebarStepContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem;
+}
+
+.sidebarImg {
+    display: block;
+    max-height: 100%;
+}
+
+.sidebarStep {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.sidebarCircle {
+    font-size: 1.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: var(--neutral-clr-white);
+    border: 1px solid var(--neutral-clr-white);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    font-weight: var(--fw-medium);
+    color: var(--primary-clr-marine-blue);
+    background-color: var(--primary-clr-light-blue);
+    border: 1px solid var(--neutral-clr-light-blue);
+}
+
+.sidebarStep :last-child > * {
+    display: block;
+    text-transform: uppercase;
+}
+
+.sidebarSubheading {
+    font-size: 1.3rem;
+    color: var(--neutral-clr-light-gray);
+    margin-bottom: 0.5rem;
+}
+
+.sidebarHeading {
+    font-size: 1.6rem;
+    font-weight: var(--fw-medium);
+    color: var(--neutral-clr-white);
+}
