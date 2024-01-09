@@ -1,0 +1,53 @@
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.detailsHeading {
+    font-size: 3.6rem;
+    font-weight: var(--fw-bold);
+    color: var(--primary-clr-marine-blue);
+}
+
+.detailsSubHeading {
+    font-size: 1.7rem;
+    color: var(--neutral-clr-cool-gray);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formInput :first-child {
+    font-size: 1.7rem;
+    font-weight: var(--fw-medium);
+    color: var(--primary-clr-marine-blue);
+}
+
+.formInput :last-child {
+    outline: none;
+    font-size: 1.8rem;
+    border: 1px solid var(--neutral-clr-light-gray);
+    padding: 1.6rem 1.2rem 1.6rem 1.2rem;
+    border-radius: 0.725rem;
+    transition: all 0.2s ease-in;
+}
+
+.formInput :last-child:hover,
+.formInput :last-child:active {
+    border: 1px solid var(--primary-clr-purplish-blue);
+}
+
+.formInput :last-child::placeholder {
+    color: var(--neutral-clr-cool-gray);
+}
