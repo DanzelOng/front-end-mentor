@@ -1,15 +1,17 @@
+import { formInitialState } from './data';
+
 export default function reducer(state, action) {
     switch (action.type) {
         case 'name': {
+            // prevent white spaces at beginning of word
+            if (action.payload.startsWith(' ')) return state;
+
             let status;
             const nonAlphabets = /^\w/;
             const specialCharacters = /[\d]*[^ a-zA-Z]/;
-            
-            // prevent white spaces at beginning of word
-            if (action.payload.startsWith(' ')) return { ...state };
 
             // name regex validation
-            !action.payload || !action.payload.trim()
+            !action.payload
                 ? (status = 'empty')
                 : !nonAlphabets.test(action.payload)
                 ? (status = 'invalid-start')
@@ -30,7 +32,7 @@ export default function reducer(state, action) {
             };
         }
         case 'email': {
-            if (action.payload.startsWith(' ')) return { ...state };
+            if (action.payload.startsWith(' ')) return state;
 
             let status;
             const isEmptyEmail = action.payload.trim().length === 0;
@@ -53,7 +55,7 @@ export default function reducer(state, action) {
             };
         }
         case 'phoneNumber': {
-            if (action.payload.startsWith(' ')) return { ...state };
+            if (action.payload.startsWith(' ')) return state;
 
             // check for non digits
             const containsNonDigits = /[a-zA-Z]*[^ \d]/;
@@ -86,8 +88,15 @@ export default function reducer(state, action) {
                 ...state,
                 billByMonth: !state.billByMonth,
             };
-        case 'addOns':
-            return state;
+        case 'addOns': {
+            const updatedAddOns = { ...state.addOns };
+            updatedAddOns[`addOn${action.payload}`] =
+                !updatedAddOns[`addOn${action.payload}`];
+            return {
+                ...state,
+                addOns: updatedAddOns,
+            };
+        }
         case 'invalid': {
             if (action.payload === 'form') {
                 const arr = Array.from(
@@ -116,8 +125,18 @@ export default function reducer(state, action) {
                 ...state,
                 index: state.index - 1,
             };
+        case 'redirect':
+            return {
+                ...state,
+                index: 2,
+            };
         case 'confirm':
-            return state;
+            return {
+                ...state,
+                isReset: true,
+            };
+        case 'resubmit':
+            return formInitialState;
         default:
             return new Error('Unknown Action');
     }
