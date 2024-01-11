@@ -1,0 +1,17 @@
+.errMsg,
+.errMsg {
+    font-size: 1.6rem;
+    color: var(--primary-clr-strawberry-red);
+    position: absolute;
+}
+
+.form {
+    top: 0;
+    right: 2rem;
+}
+
+.plan {
+    bottom: 0;
+    left: 0;
+    transform: translateY(3rem);
+}
