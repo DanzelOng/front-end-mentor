@@ -23,7 +23,7 @@ const getCurrentComponent = function (index) {
 };
 
 export default function App() {
-    const [{ index, ...restState }, dispatch] = useReducer(
+    const [{ index, isReset, ...restState }, dispatch] = useReducer(
         reducer,
         formInitialState
     );
@@ -33,35 +33,55 @@ export default function App() {
         <Main>
             <Sidebar index={index} />
             <FormContainer>
-                <CurrentComponent formDetails={restState} dispatch={dispatch} />
-                <ButtonContainer>
-                    {index !== 1 && (
-                        <Button
-                            content='Go Back'
-                            style='btnPrevious'
-                            type='previous'
-                            index={index}
+                {!isReset ? (
+                    <>
+                        <CurrentComponent
+                            formDetails={restState}
                             dispatch={dispatch}
                         />
-                    )}
-                    {index < 4 && (
-                        <Button
-                            content='Next Step'
-                            style='btnNext'
-                            type='next'
-                            index={index}
-                            dispatch={dispatch}
-                        />
-                    )}
-                    {index === 4 && (
-                        <Button
-                            content='Confirm'
-                            style='btnConfirm'
-                            type='confirm'
-                            dispatch={dispatch}
-                        />
-                    )}
-                </ButtonContainer>
+                        <ButtonContainer>
+                            {index !== 1 && (
+                                <Button
+                                    content='Go Back'
+                                    style='btnPrevious'
+                                    type='previous'
+                                    index={index}
+                                    dispatch={dispatch}
+                                />
+                            )}
+                            {index < 4 && (
+                                <Button
+                                    content='Next Step'
+                                    style='btnNext'
+                                    type='next'
+                                    index={index}
+                                    formDetails={restState}
+                                    dispatch={dispatch}
+                                />
+                            )}
+                            {index === 4 && (
+                                <Button
+                                    content='Confirm'
+                                    style='btnConfirm'
+                                    type='confirm'
+                                    index={index}
+                                    formDetails={restState}
+                                    dispatch={dispatch}
+                                />
+                            )}
+                            {isReset && (
+                                <Button
+                                    content='Submit Again'
+                                    style='btnResubmit'
+                                    type='resubmit'
+                                    dispatch={dispatch}
+                                />
+                            )}
+                        </ButtonContainer>
+                    </>
+                ) : (
+                    <Success dispatch={dispatch} />
+                )}
             </FormContainer>
         </Main>
     );
