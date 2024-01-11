@@ -14,6 +14,11 @@ export default function Button({
             return;
         }
 
+        if (type === 'resubmit') {
+            dispatch({ type });
+            return;
+        }
+
         const { planName, inputStatus } = formDetails;
         switch (curIndex) {
             case 1: {
