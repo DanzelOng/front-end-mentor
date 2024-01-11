@@ -1,0 +1,103 @@
+.summaryTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.summaryHeading {
+    font-size: 3.6rem;
+    font-weight: var(--fw-bold);
+    color: var(--primary-clr-marine-blue);
+}
+
+.summarySubHeading {
+    font-size: 1.7rem;
+    color: var(--neutral-clr-cool-gray);
+}
+
+.summaryContentBox {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3.5rem;
+    background-color: var(--neutral-clr-magnolia);
+}
+
+.summaryPriceContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--neutral-clr-light-gray);
+}
+
+.summaryPriceContent :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.725rem;
+}
+
+.summaryName {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: var(--fw-medium);
+    color: var(--primary-clr-marine-blue);
+}
+
+.redirect {
+    font-size: 1.4rem;
+    color: var(--neutral-clr-cool-gray);
+    text-decoration: underline;
+    transition: all 0.15s ease-in;
+}
+
+.redirect:hover,
+.redirect:active {
+    cursor: pointer;
+    color: hsl(220, 2%, 32%);
+}
+
+.subscription {
+    font-size: 1.7rem;
+    font-weight: var(--fw-medium);
+    color: var(--primary-clr-marine-blue);
+}
+
+.addOnsContent {
+    margin-top: 2.4rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.addOn {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: var(--neutral-clr-cool-gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.addOn :last-child {
+    color: var(--primary-clr-marine-blue);
+}
+
+.summaryTotalPrice {
+    font-size: 1.8rem;
+    padding-inline: 2.5rem;
+    font-weight: var(--fw-medium);
+    color: var(--neutral-clr-cool-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summaryTotalPrice :last-child {
+    font-size: 2.4rem;
+    color: var(--primary-clr-purplish-blue);
+}
