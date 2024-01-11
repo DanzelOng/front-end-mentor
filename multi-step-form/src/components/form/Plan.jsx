@@ -47,7 +47,11 @@ export default function Plan({ formDetails, dispatch }) {
                                         {plan.name}
                                     </span>
                                     <span className={styles.planDesc}>
-                                        {plan.description}
+                                        +$
+                                        {billByMonth
+                                            ? plan.monthlyPrice
+                                            : plan.yearlyPrice}
+                                        {billByMonth ? '/mo' : '/yr'}
                                     </span>
                                     {!billByMonth && (
                                         <span className={styles.planAddOn}>
