@@ -2,5 +2,6 @@
     padding: 2.8rem 1.8rem 1.4rem 1.8rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 51rem;
 }
