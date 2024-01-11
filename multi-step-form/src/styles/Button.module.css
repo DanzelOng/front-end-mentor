@@ -25,7 +25,8 @@
     color: hsla(0, 0%, 16%, 0.768);
 }
 
-.btnNext {
+.btnNext,
+.btnResubmit {
     border: none;
     font-size: 1.7rem;
     color: var(--neutral-clr-white);
@@ -37,7 +38,30 @@
 }
 
 .btnNext:hover,
-.btnNext:active {
+.btnNext:active,
+.btnResubmit:hover,
+.btnResubmit:active {
     cursor: pointer;
     background-color: hsla(213, 96%, 18%, 0.925);
+}
+
+.btnConfirm {
+    border: none;
+    font-size: 1.7rem;
+    color: var(--neutral-clr-white);
+    background-color: var(--primary-clr-purplish-blue);
+    padding: 1.2rem 2.55rem 1.2rem 2.55rem;
+    border-radius: 0.625rem;
+    justify-self: end;
+    transition: all 0.25s;
+}
+
+.btnConfirm:hover,
+.btnConfirm:active {
+    cursor: pointer;
+    background-color: hsla(243, 100%, 62%, 0.87);
+}
+
+.btnResubmit {
+    justify-self: center;
 }
