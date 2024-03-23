@@ -19,7 +19,7 @@ export default function reducer(state, action) {
                 ? (status = 'contain-special')
                 : Array.from(action.payload).reduce(
                       (acc, curValue) =>
-                          curValue.trim().length !== 0 ? acc + 1 : acc,
+                          curValue.trim().length === 1 ? acc + 1 : acc,
                       0
                   ) >= 3
                 ? (status = 'valid')
@@ -36,7 +36,7 @@ export default function reducer(state, action) {
 
             let status;
             const isEmptyEmail = action.payload.trim().length === 0;
-            const isValidEmail = /^[\w\d]*@[\w\d]{1,}.\w{2,}(.\w{2,})?$/;
+            const isValidEmail = /^[\w\d]*@[\w\d]{3,}.\w{2,}(.\w{2,})?$/;
 
             // email regex validation
             isEmptyEmail
@@ -62,7 +62,12 @@ export default function reducer(state, action) {
             if (containsNonDigits.test(action.payload)) return { ...state };
 
             const isEmptyNumber = action.payload.trim().length === 0;
-            const isValidLength = action.payload.trim().length === 10;
+            const isValidLength =
+                Array.from(action.payload).reduce(
+                    (acc, curValue) =>
+                        curValue.trim().length === 1 ? acc + 1 : acc,
+                    0
+                ) === 10;
 
             return {
                 ...state,
@@ -111,14 +116,18 @@ export default function reducer(state, action) {
                     inputStatus: Object.fromEntries(arr),
                 };
             }
-            return !state.planName
-                ? { ...state, planStatus: 'unselected' }
-                : { ...state, planStatus: 'selected' };
+            return {
+                ...state,
+                planStatus:
+                    !state.planStatus || state.planStatus === 'unselected'
+                        ? 'unselected'
+                        : 'selected',
+            };
         }
         case 'next':
             return {
                 ...state,
-                index: state.index < 4 ? state.index + 1 : state.index,
+                index: state.index + 1,
             };
         case 'previous':
             return {
