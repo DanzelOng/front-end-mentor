@@ -65,3 +65,18 @@
 .btnResubmit {
     justify-self: center;
 }
+
+@media (max-width: 900px) {
+    .btnContainer {
+        height: 8.5rem;
+        align-items: center;
+        padding-inline: 4rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: var(--neutral-clr-white);
+    }
+    .btnResubmit {
+        justify-self: end;
+    }
+}

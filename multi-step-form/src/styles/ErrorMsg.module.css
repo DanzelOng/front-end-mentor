@@ -1,8 +1,8 @@
-.errMsg,
 .errMsg {
     font-size: 1.6rem;
     color: var(--primary-clr-strawberry-red);
     position: absolute;
+    line-height: 1.4;
 }
 
 .form {
@@ -14,4 +14,14 @@
     bottom: 0;
     left: 0;
     transform: translateY(3rem);
+}
+
+@media (max-width: 600px) {
+    .errMsg.form,
+    .errMsg.plan {
+        position: static;
+    }
+    .errMsg.plan {
+        transform: none;
+    }
 }

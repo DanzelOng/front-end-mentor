@@ -1,10 +1,20 @@
 .main {
-    width: 95rem;
-    padding: 1.8rem 0 1.8rem 1.8rem;
+    height: 60rem;
+    padding: 1.6rem 3.6rem 1.6rem 1.6rem;
     margin-inline: 3.2rem;
-    display: grid;
-    grid-template-columns: 30fr 70fr;
-    gap: 8rem;
+    display: flex;
+    gap: 3rem;
     background-color: var(--neutral-clr-white);
     border-radius: 1.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.125);
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        margin-inline: 2rem;
+        padding: 2.5rem;
+        height: 100%;
+    }
 }

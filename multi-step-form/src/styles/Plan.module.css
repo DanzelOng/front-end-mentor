@@ -15,6 +15,7 @@
 .planSubHeading {
     font-size: 1.7rem;
     color: var(--neutral-clr-cool-gray);
+    line-height: 1.6;
 }
 
 .planTierList {
@@ -62,6 +63,7 @@
     font-size: 1.7rem;
     font-weight: var(--fw-medium);
     text-transform: capitalize;
+    color: var(--primary-clr-marine-blue);
 }
 
 .planDesc {
@@ -73,4 +75,29 @@
     font-size: 1.4rem;
     font-weight: var(--fw-medium);
     color: var(--primary-clr-marine-blue);
+}
+
+@media (max-width: 1050px) {
+    .planTierList {
+        gap: 2.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .plan {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    .planTitle {
+        margin-bottom: 2rem;
+    }
+    .planTierList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .planHeading {
+        font-size: 3rem;
+    }
 }

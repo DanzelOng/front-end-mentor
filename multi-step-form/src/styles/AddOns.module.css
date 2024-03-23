@@ -15,6 +15,7 @@
 .addOnSubHeading {
     font-size: 1.7rem;
     color: var(--neutral-clr-cool-gray);
+    line-height: 1.6;
 }
 
 .addOnList {
@@ -52,7 +53,7 @@
 
 .addOnContent {
     display: flex;
-    justify-content: space-between;
+    flex-grow: 1;
     gap: 1.6rem;
 }
 
@@ -72,11 +73,36 @@
 .addOnDesc {
     font-size: 1.4rem;
     color: var(--neutral-clr-cool-gray);
+    line-height: 1.6;
+    text-wrap: balance;
 }
 
 .addOnPrice {
     margin-left: auto;
     align-self: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: var(--fw-medium);
     color: var(--primary-clr-purplish-blue);
+}
+
+@media (max-width: 600px) {
+    .addOn {
+        padding: 1.5rem;
+    }
+    .addOnContent {
+        flex-direction: column;
+    }
+    .addOnTitle {
+        margin-bottom: 3rem;
+    }
+    .addOnPrice {
+        margin-left: 0;
+        align-self: revert;
+    }
+}
+
+@media (max-width: 400px) {
+    .addOnHeading {
+        font-size: 3.2rem;
+    }
 }

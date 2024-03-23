@@ -61,3 +61,23 @@
 .formInput :last-child::placeholder {
     color: var(--neutral-clr-cool-gray);
 }
+
+@media (max-width: 600px) {
+    .formInput input {
+        font-size: 1.9rem;
+    }
+    .detailsSubHeading,
+    .detailsHeading {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 400px) {
+    .detailsHeading {
+        font-size: 3.2rem;
+    }
+    .formInput input {
+        width: 95%;
+        font-size: 1.8rem;
+    }
+}

@@ -19,3 +19,10 @@
     text-align: center;
     max-width: 90%;
 }
+
+@media (max-width: 1050px) {
+    .successText {
+        max-width: 100%;
+        font-size: 1.7rem;
+    }
+}

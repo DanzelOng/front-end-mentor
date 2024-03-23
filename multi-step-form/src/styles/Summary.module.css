@@ -15,6 +15,7 @@
 .summarySubHeading {
     font-size: 1.7rem;
     color: var(--neutral-clr-cool-gray);
+    line-height: 1.6;
 }
 
 .summaryContentBox {
@@ -85,6 +86,7 @@
 
 .addOn :last-child {
     color: var(--primary-clr-marine-blue);
+    font-weight: var(--fw-medium);
 }
 
 .summaryTotalPrice {
@@ -100,4 +102,38 @@
 .summaryTotalPrice :last-child {
     font-size: 2.4rem;
     color: var(--primary-clr-purplish-blue);
+}
+
+@media (max-width: 600px) {
+    .summaryPriceContent {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .summaryHeading {
+        font-size: 3.2rem;
+    }
+    .summaryTotalPrice {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .summaryPriceContent :first-child {
+        align-items: center;
+        font-size: 2rem;
+    }
+    .summaryName {
+        text-align: center;
+    }
+    .summaryPriceContent {
+        justify-content: center;
+    }
+    .subscription {
+        font-size: 2rem;
+    }
+    .redirect {
+        font-size: 1.7rem;
+    }
 }
