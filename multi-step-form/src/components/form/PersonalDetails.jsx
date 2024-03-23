@@ -25,6 +25,7 @@ export default function PersonalDetails({ formDetails, dispatch }) {
                         type='text'
                         name='name'
                         placeholder='e.g. Stephen King'
+                        maxLength={30}
                         value={name || ''}
                         onChange={(e) =>
                             dispatch({ type: 'name', payload: e.target.value })
@@ -58,6 +59,7 @@ export default function PersonalDetails({ formDetails, dispatch }) {
                         name='email'
                         placeholder='e.g stephenking@lorem.com'
                         value={email || ''}
+                        maxLength={30}
                         onChange={(e) =>
                             dispatch({
                                 type: 'email',

@@ -24,7 +24,7 @@ export default function Success({ dispatch }) {
                     content='Resubmit'
                     style='btnResubmit'
                     type='resubmit'
-                    dispatch={() => dispatch({ type: 'resubmit' })}
+                    dispatch={dispatch}
                 />
             </ButtonContainer>
         </div>

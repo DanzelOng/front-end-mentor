@@ -69,14 +69,6 @@ export default function App() {
                                     dispatch={dispatch}
                                 />
                             )}
-                            {isReset && (
-                                <Button
-                                    content='Submit Again'
-                                    style='btnResubmit'
-                                    type='resubmit'
-                                    dispatch={dispatch}
-                                />
-                            )}
                         </ButtonContainer>
                     </>
                 ) : (

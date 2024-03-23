@@ -4,11 +4,6 @@ import styles from '../../styles/SideBar.module.css';
 export default function Sidebar({ index }) {
     return (
         <aside className={styles.sidebar}>
-            <img
-                className={styles.sidebarImg}
-                src='/images/bg-sidebar-desktop.svg'
-                alt='sidebar image'
-            />
             <div className={styles.sidebarStepContainer}>
                 {steps.map((step) => {
                     return (

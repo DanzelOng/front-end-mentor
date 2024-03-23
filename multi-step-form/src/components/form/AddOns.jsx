@@ -44,14 +44,14 @@ export default function AddOns({ formDetails, dispatch }) {
                                             {addOn.desc}
                                         </span>
                                     </div>
+                                    <span className={styles.addOnPrice}>
+                                        +$
+                                        {billByMonth
+                                            ? addOn.monthlyPrice
+                                            : addOn.yearlyPrice}
+                                        {billByMonth ? '/mo' : '/yr'}
+                                    </span>
                                 </div>
-                                <span className={styles.addOnPrice}>
-                                    +$
-                                    {billByMonth
-                                        ? addOn.monthlyPrice
-                                        : addOn.yearlyPrice}
-                                    {billByMonth ? '/mo' : '/yr'}
-                                </span>
                             </li>
                         );
                     })}
