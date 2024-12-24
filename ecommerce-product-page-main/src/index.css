@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@media (max-width: 23.59375em) {
+  .cart {
+    margin-top: 9rem;
+  }
+}
+
+html:has([data-menuOverlay]),
+body:has([data-menuOverlay]) {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
