@@ -4,9 +4,20 @@ import { navigationLinks } from "./products";
 import avatarImg from "/images/image-avatar.png";
 import iconSprites from "/images/icons.svg";
 
+const bodyEl = document.body;
+
 const Header = ({ toggleCart, isCartOpen, cartCount, clearCart }) => {
   const [isMenuOpen, setMenuBar] = useState(false);
-  const toggleMenu = () => setMenuBar((state) => !state);
+  const toggleMenu = () => {
+    if (bodyEl.classList.contains("no-menu-overlay")) {
+      bodyEl.classList.remove("no-menu-overlay");
+      bodyEl.classList.add("has-menu-overlay");
+    } else {
+      bodyEl.classList.remove("has-menu-overlay");
+      bodyEl.classList.add("no-menu-overlay");
+    }
+    setMenuBar((state) => !state);
+  };
   return (
     <header className="relative mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-7 p-6 md:border-b md:border-black/15 md:px-0">
       <div className="flex gap-5 md:gap-[3.75rem]">
@@ -32,7 +43,7 @@ const Header = ({ toggleCart, isCartOpen, cartCount, clearCart }) => {
         <nav id="header-navigation" className="relative">
           {isMenuOpen && (
             <div
-              data-menuOverlay
+              data-menuoverlay
               className="fixed inset-0 z-[9999] bg-black/70"
             ></div>
           )}
@@ -56,7 +67,7 @@ const Header = ({ toggleCart, isCartOpen, cartCount, clearCart }) => {
         <button
           className={`${isCartOpen ? "bg-white" : "hover:border-veryDarkBlue"} ${cartCount ? "before:absolute before:right-[-1.5px] before:top-[-2px] before:flex before:h-4 before:w-5 before:items-center before:justify-center before:rounded-full before:bg-orange before:text-xs before:text-white before:content-[attr(data-cartCount)] md:before:h-5 md:before:w-6" : ""} relative z-[1005] rounded-full border-2 border-transparent px-1 transition-all duration-300 md:px-2`}
           aria-label="toggles cart"
-          data-cartCount={cartCount}
+          data-cartcount={cartCount}
           onClick={toggleCart}
         >
           <svg className="aspect-square w-6">

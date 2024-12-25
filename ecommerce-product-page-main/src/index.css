@@ -8,8 +8,8 @@
   }
 }
 
-html:has([data-menuOverlay]),
-body:has([data-menuOverlay]) {
+html.has-menu-overlay,
+body.has-menu-overlay {
   overflow-y: hidden;
   overflow-x: hidden;
 }
