@@ -31,3 +31,9 @@ Challenges found on [Front End Mentor](https://www.frontendmentor.io/)
 - [Repo](https://github.com/DanzelOng/front-end-mentor/tree/master/multi-step-form)
 - [Link to Challenge](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ)
 - [Live Site URL](https://fem-multi-steps-form.netlify.app)
+
+## Responsive Ecommerce Product Landing Page
+
+- [Repo](https://github.com/DanzelOng/front-end-mentor/tree/master/ecommerce-product-page-main)
+- [Link to Challenge](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
+- [Live Site URL](https://fem-ecommerce-landing.netlify.app/)
