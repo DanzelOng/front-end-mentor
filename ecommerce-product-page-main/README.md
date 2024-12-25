@@ -1,5 +1,12 @@
 # Responsive Ecommerce Product Landing Page
 
+-   This project was bootstrapped with ViteJS.
+
+## Technologies Used
+
+-   ReactJS 18
+-   TailwindCSS
+
 ### Live Site URL
 
 [Link](https://fem-ecommerce-landing.netlify.app/)
